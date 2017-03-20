@@ -1,0 +1,8 @@
+{
+  "name": "Frank Zhang",
+  "version": "0.0.0.1",
+  "description": "Cnode微信小程序demo",
+  "devDependencies": {
+    "wxParse": "git+https://github.com/icindy/wxParse.git"
+  }
+}
