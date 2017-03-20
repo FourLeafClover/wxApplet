@@ -1,0 +1,26 @@
+<loading hidden="{{isShowLoading == false}}" style="line-height:3rem;font-size:1rem;text-align:center">
+     重新加载
+</loading>
+<view class="main">
+  <view class="tagTitle" >{{curTag.value}}</view>
+  <scroll-view scroll-y="true" style="height:{{systemInfo.windowHeight - (systemInfo.windowWidth/20)*2 }}px" bindscrolltoupper="reflesh" bindscrolltolower="getNextPage" bindscroll="scroll" scroll-into-view="scrollTop" >
+    <view class="item" data-id="{{item.id}}" data-title="{{item.title}}" bindtap="goToDetailPage" wx:for="{{items}}" wx:for-item="item">
+      <view class="title">{{item.title}}</view>
+      <label class="v">{{item.tab}}</label>
+      <label class='author'>{{item.author.loginname}}</label>
+    </view>
+    <view style="line-height:3rem;font-size=1rem;text-align:center;border-top:1px solid black">{{hasLoadAll?"亲,数据已加载完毕":"加载数据"}}</view>
+  </scroll-view>
+
+  <!--<view class="item" data-id="{{item.id}}" data-title="{{item.title}}" bindtap="goToDetailPage" wx:for="{{items}}" wx:for-item="item">
+    <view class="title">{{item.title}}</view>
+    <label class="v">{{item.tab}}</label>
+    <label class='author'>{{item.author.loginname}}</label>
+  </view>-->
+</view>
+<view class="tags">
+  <view style="{{isOpenTagList?'':'display:none'}}" wx:for="{{tags}}" data-tag='{{tag}}' bindtap="getApiData" class='tag' wx:for-item="tag">
+    {{tag.value}}
+  </view>
+  <view class="tag" bindtap="openTagList">+</view>
+</view>

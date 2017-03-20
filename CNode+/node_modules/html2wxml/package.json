@@ -1,0 +1,87 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "html2wxml",
+        "scope": null,
+        "escapedName": "html2wxml",
+        "name": "html2wxml",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\myProject\\微信小程序\\CNode+"
+    ]
+  ],
+  "_from": "html2wxml@latest",
+  "_id": "html2wxml@2.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/html2wxml",
+  "_nodeVersion": "4.6.2",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/html2wxml-2.0.1.tgz_1482201945934_0.7695613140240312"
+  },
+  "_npmUser": {
+    "name": "skylor",
+    "email": "fyl_2525@163.com"
+  },
+  "_npmVersion": "4.0.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "html2wxml",
+    "scope": null,
+    "escapedName": "html2wxml",
+    "name": "html2wxml",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/html2wxml/-/html2wxml-2.0.1.tgz",
+  "_shasum": "5c29f13fb11518723f730357aea2318d7f478111",
+  "_shrinkwrap": null,
+  "_spec": "html2wxml",
+  "_where": "C:\\myProject\\微信小程序\\CNode+",
+  "author": {
+    "name": "skylor"
+  },
+  "bugs": {
+    "url": "https://github.com/skyFi/html2wxml/issues"
+  },
+  "dependencies": {},
+  "description": "微信小程序,HTML转WXML",
+  "devDependencies": {},
+  "directories": {
+    "example": "example"
+  },
+  "dist": {
+    "shasum": "5c29f13fb11518723f730357aea2318d7f478111",
+    "tarball": "https://registry.npmjs.org/html2wxml/-/html2wxml-2.0.1.tgz"
+  },
+  "gitHead": "4badb1a9e6a0de0452d30565ae9f2ebbbb640d77",
+  "homepage": "https://github.com/skyFi/html2wxml#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "skylor",
+      "email": "fyl_2525@163.com"
+    }
+  ],
+  "name": "html2wxml",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyFi/html2wxml.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.0.1"
+}

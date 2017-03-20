@@ -1,0 +1,14 @@
+<import src="../../modules/wxParse/wxParse.wxml" />
+<view class="blog">
+  <view class="title">
+    {{title}}
+  </view>
+  <view class="clearfix author">
+    <image class="avatar" src="{{detail.author.avatar_url}}"></image>
+    <label class="name">{{detail.author.loginname}}</label>
+    <label class="time">{{detail.create_at}}</label>
+  </view>
+</view>
+<view class="detail">
+  <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+</view>
