@@ -39,4 +39,4 @@
   position: relative;
 }
 
-@import "../../node_modules/wxParse/wxParse.wxss";
+@import "../../modules/wxParse/wxParse.wxss";

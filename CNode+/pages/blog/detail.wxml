@@ -1,4 +1,4 @@
-<import src="../../node_modules/wxParse/wxParse.wxml" />
+<import src="../../modules/wxParse/wxParse.wxml" />
 <view class="blog">
   <view class="title">
     {{title}}

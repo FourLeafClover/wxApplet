@@ -1,5 +1,5 @@
 let httpHelper = require('../../utils/httpHelper.js')
-var WxParse = require('../../node_modules/wxParse/wxParse.js');
+var WxParse = require('/../../modules/wxParse/wxParse.js');
 Page({
     data: {
         detail: null,
