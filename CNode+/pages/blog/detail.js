@@ -5,27 +5,30 @@ Page({
         detail: null,
         title: "",
     },
-    onShareAppMessage: function () {
+    onPullDownRefresh: function() {
+        console.log("reload");
+        this.loadData(this.data.detail.id);
+    },
+    onShareAppMessage: function() {
         return {
             title: this.data.title
         }
     },
-    //事件处理函数
-    bindViewTap: function () {
-        wx.navigateTo({
-            url: '../logs/logs'
-        })
+    onLoad: function(param) {
+        this.setData({
+            title: param.title
+        });
+        this.loadData(param.key);
     },
-    onLoad: function (param) {
+    loadData: function(id) {
         let that = this;
         httpHelper.get({
-            url: `/topic/${param.key}`
+            url: `/topic/${id}`
         }, (result) => {
             if (result.success) {
                 WxParse.wxParse('article', 'html', result.data.content, that, 5);
                 that.setData({
-                    detail: result.data,
-                    title: param.title
+                    detail: result.data
                 })
             }
         })

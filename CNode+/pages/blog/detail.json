@@ -1,5 +1,6 @@
 {
     "navigationBarTitleText": "详情页",
     "navigationBarBackgroundColor": "green",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": "true"
 }
