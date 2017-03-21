@@ -1,0 +1,17 @@
+<view class='main'>
+    <view class="queryParam">
+        <view class='formGroup'>
+            <label bindtap="showTag">{{ selectedExpress==null?"选择快递":selectedExpress.name }}</label>
+            <input value="{{expressNumber}}" bindinput="inputExpressNumber" placeholder="请输入运单号" />
+            <button bindtap="queryExpress">查询</button>
+        </view>
+    </view>
+    <view class="result">
+        <view class="section" wx:for="{{infoList}}"  wx:for-item="info">
+           <label>{{info.ftime}}-{{info.time}}</label>
+           <view>
+                {{info.context}}     
+            </view>
+        </view>
+    </view>
+</view>

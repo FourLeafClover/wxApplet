@@ -1,0 +1,56 @@
+.queryParam input{
+    float: left;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    background-color: white;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+    width: 8rem;
+    height: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.queryParam button{
+    line-height: 1.5rem;
+    width: 4rem;
+}
+
+.queryParam label{
+    float: left;
+    background-color: white;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.queryParam{
+    width: 100%;
+    height: 3rem;
+    background-color: orange;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.result .section{
+    background-color: white;
+    margin-top: 8px;
+    padding: 8px;
+}
+
+.result .section label{
+    font-size: 0.8rem;
+}
+
+.result .section view{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 12px;
+}
+
+.main{
+   height: 100%;
+   background-color: whitesmoke;
+}
+
