@@ -1,32 +1,32 @@
 .tagTitle {
   text-align: center;
-  line-height: 2rem;
-  font-size: 1rem;
+  line-height: 80rpx;
+  font-size: 37rpx;
   background-color: green;
   color: white;
 }
 
 .tags {
   position: absolute;
-  right: 0.3rem;
-  bottom: 0.3rem;
-  width: 2rem;
-  line-height: 2rem;
-  font-size: 0.6rem;
+  right: 12rpx;
+  bottom: 12rpx;
+  width: 75rpx;
+  line-height: 75rpx;
+  font-size: 30rpx;
 }
 
 .tag {
-  border: 1px solid green;
+  border: 1rpx solid green;
   text-align: center;
-  border-radius: 0.3rem;
+  border-radius: 18rpx;
   background-color: green;
   color: white;
-  margin-top: 0.1rem;
+  margin-top: 4rpx;
 }
 
 .item {
-  padding: 1rem;
-  border-top: 1px solid gray;
+  padding: 40rpx;
+  border-top: 1rpx solid gray;
 }
 
 .item .title {
@@ -35,17 +35,17 @@
 }
 
 .item .v {
-  font-size: 0.8rem;
-  margin-right: 0.5rem;
+  font-size: 30rpx;
+  margin-right: 18rpx;
   color: white;
   background-color: green;
-  padding: 0.2rem;
-  border-radius: 0.2rem;
+  padding: 8rpx;
+  border-radius: 8rpx;
 }
 
 .item .author {
-  font-size: 0.8rem;
-  margin-right: 0.5rem;
+  font-size: 30rpx;
+  margin-right: 18rpx;
   color: gray;
 }
 
