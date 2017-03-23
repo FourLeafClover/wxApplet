@@ -1,4 +1,4 @@
-let httpHelper = require('../../utils/httpHelper.js')
+let apiService = require('../../utils/apiService.js')
 var WxParse = require('/../../modules/wxParse/wxParse.js');
 Page({
     data: {
@@ -22,7 +22,7 @@ Page({
     },
     loadData: function(id) {
         let that = this;
-        httpHelper.get({
+        apiService.get({
             url: `/topic/${id}`
         }, (result) => {
             if (result.success) {

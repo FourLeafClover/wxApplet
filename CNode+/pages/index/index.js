@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 var app = getApp()
-var httpHelper = require('../../utils/httpHelper.js')
+var apiService = require('../../utils/apiService.js')
 Page({
     data: {
         curTag: null,
@@ -79,9 +79,8 @@ Page({
         }
     },
     openTagList: function() {
-        this.data.isOpenTagList = !this.data.isOpenTagList
         this.setData({
-            isOpenTagList: this.data.isOpenTagList
+            isOpenTagList: !this.data.isOpenTagList
         })
     },
     goToDetailPage: function(event) {
@@ -92,15 +91,14 @@ Page({
         })
     },
     //获取数据
-    loadData: function(isShowLoading = true, callback) {
+    loadData: function(isShowLoading = true) {
         if (isShowLoading) {
             this.setData({
                 isShowLoading: true
             })
         }
-
         let that = this;
-        httpHelper.get({
+        apiService.get({
             url: "/topics",
             param: {
                 tab: that.data.curTag.key,
