@@ -3,16 +3,16 @@ let apiService = {
     get(options, callback) {
         var param = '';
         var url = `${this.baseUrl}${options.url}`;
-        if (options.param) {
+        /*if (options.param) {
             Object.keys(options.param).map((field) => {
                 param += `${field}=${options.param[field]}&`;
             })
             url = `${url}?${param}`;
-        }
-
+        }*/
         wx.request({
             url: url,
             method: 'GET',
+            data:options.param,
             success: function(res) {
                 callback(res.data);
             },

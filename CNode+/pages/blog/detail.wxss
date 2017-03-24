@@ -13,7 +13,7 @@
   position: absolute;
   left: 150rpx;
   top: 19rpx;
-  color: gray;
+  color: white;
 }
 
 .blog .title {
@@ -27,7 +27,7 @@
   position: absolute;
   left: 148rpx;
   top: 56rpx;
-  color: gray;
+  color: white;
   font-size: 30rpx;
 }
 
