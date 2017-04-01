@@ -1,6 +1,6 @@
-.blog{
-  padding:19rpx;
-  background-color: green;
+.blog {
+  padding: 19rpx;
+  background-color: #008b00;
 }
 
 .blog .avatar {
@@ -17,7 +17,7 @@
 }
 
 .blog .title {
-  background-color: green;
+  background-color: #008b00;
   width: 100%;
   color: white;
   margin-bottom: 37rpx;
@@ -31,12 +31,60 @@
   font-size: 30rpx;
 }
 
-.detail{
+.detail {
   padding: 19rpx;
 }
 
-.author{
+.author {
   position: relative;
+}
+
+.replies > .total {
+  background-color: lightgray;
+  text-align: center;
+  padding: 10rpx;
+  font-size: 30rpx;
+  margin-bottom:20rpx;
+}
+
+.replies{
+  padding:20rpx;
+}
+
+.replies .item{
+  position:relative;
+}
+
+.replies .avatar{
+  height:100rpx;
+  width:100rpx;
+  border-radius:50%;
+}
+
+.replies .name{
+  position:absolute;
+  font-size:25rpx;
+  top:35rpx;
+  left:130rpx;
+}
+
+.replies .time{
+  position:absolute;
+  font-size:25rpx;
+  top:70rpx;
+  left:130rpx;
+}
+
+.replies .item{
+  margin-bottom:30rpx;
+  border:1px solid green;
+  padding:20rpx;
+}
+
+.replies .content{
+  font-size:25rpx;
+  line-height:35rpx;
+  padding-left:50px;
 }
 
 @import "../../modules/wxParse/wxParse.wxss";

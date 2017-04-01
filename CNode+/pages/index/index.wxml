@@ -2,8 +2,10 @@
   重新加载
 </loading>
 <view class="main">
-  <view class="tagTitle">{{curTag.value}}</view>
-  <scroll-view scroll-y="true" style="height:{{systemInfo.windowHeight - (systemInfo.windowWidth/750)*80 }}px" bindscrolltoupper="reflesh" bindscrolltolower="getNextPage" bindscroll="scroll" scroll-into-view="scrollTop">
+  <view class="tagTitle" style="width:100%">{{curTag.value}}
+    <image bindtap="reflesh" src="/data/img/1.png"></image>
+  </view>
+  <scroll-view scroll-y="true" style="height:{{systemInfo.windowHeight - (systemInfo.windowWidth/750)*80 }}px" bindscrolltolower="getNextPage" bindscroll="scroll" scroll-top="{{scrollTop}}">
     <view hover="true" hover-class="hovergray" class="item" data-id="{{item.id}}" hover-start-time="0" hover-stay-time="0" data-title="{{item.title}}" bindtap="goToDetailPage" wx:for="{{items}}" wx:for-item="item">
       <view class="title">{{item.title}}</view>
       <label class="v">{{item.tab}}</label>
@@ -13,6 +15,7 @@
   </scroll-view>
 </view>
 <view class="tags">
+
   <!--<view style="{{isOpenTagList?'':'display:none'}}" class="tag">
     <contact-button type="default-light"  session-from="weapp">
     </contact-button>

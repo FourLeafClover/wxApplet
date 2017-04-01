@@ -2,8 +2,16 @@
   text-align: center;
   line-height: 80rpx;
   font-size: 37rpx;
-  background-color: green;
+  background-color: #008b00;
   color: white;
+}
+
+.tagTitle image {
+  position: absolute;
+  height: 40rpx;
+  width: 40rpx;
+  padding: 20rpx;
+  right: 20rpx;
 }
 
 .tags {
@@ -54,9 +62,11 @@
   display: inline-block;
   position: absolute;
   overflow-y: auto;
+  width: 750rpx;
+  overflow-x: hidden;
 }
 
-.hovergray{
+.hovergray {
   background-color: gray;
   opacity: 0.8;
 }

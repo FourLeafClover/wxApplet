@@ -11,12 +11,15 @@ let apiService = {
         }*/
         wx.request({
             url: url,
+            header: {
+                'content-type': 'application/json'
+            },
             method: 'GET',
-            data:options.param,
-            success: function(res) {
+            data: options.param,
+            success: function (res) {
                 callback(res.data);
             },
-            fail: function(res) {
+            fail: function (res) {
                 wx.showToast({
                     title: "请求失败",
                     icon: "fail",

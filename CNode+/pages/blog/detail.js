@@ -4,9 +4,9 @@ Page({
     data: {
         detail: null,
         title: "",
+        replies: []
     },
     onPullDownRefresh: function() {
-        console.log("reload");
         this.loadData(this.data.detail.id);
     },
     onShareAppMessage: function() {
@@ -16,20 +16,38 @@ Page({
     },
     onLoad: function(param) {
         this.setData({
-            title: param.title
+            title: decodeURI(param.title)
         });
         this.loadData(param.key);
     },
     loadData: function(id) {
         let that = this;
         apiService.get({
-            url: `/topic/${id}`
+            url: `/topic/${id}`,
+            param: {
+                mdrender: true
+            }
         }, (result) => {
             if (result.success) {
                 WxParse.wxParse('article', 'html', result.data.content, that, 5);
                 that.setData({
                     detail: result.data
-                })
+                });
+            }
+        })
+    },
+    loadReplies: function() {
+        let that = this;
+        apiService.get({
+            url: `/topic/${this.data.detail.id}`,
+            param: {
+                mdrender: false
+            }
+        }, (result) => {
+            if (result.success) {
+                that.setData({
+                    replies: result.data.replies
+                });
             }
         })
     }

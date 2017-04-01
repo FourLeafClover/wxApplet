@@ -1,5 +1,4 @@
 {
     "navigationBarTitleText": "CNode+",
-    "navigationBarBackgroundColor": "green",
-    "navigationBarTextStyle": "white"
+    "enablePullDownRefresh": "false"
 }
